@@ -4,6 +4,8 @@ This repository contains my work on 3D-printable parts for a working Curta Type 
 
 This work would not be possible without [Marcus Wu's Curta Type I at 3x scale](https://www.thingiverse.com/thing:1943171)
 and [Mads Eskildsen's detailed Curta Type II model](https://www.thingiverse.com/thing:4146906).
+Marcus Wu's work informs many of the manufacturing and assembly techniques used here for Mads
+Eskildsen's models.
 
 # Components
 
@@ -14,6 +16,26 @@ based on my own intuition about the way the Curta Type II works.
 Each subsection may also refer to a 3mf file containing the parts for that subsystem. Not all parts
 match the original design. I've combined quite a few into "composite" parts for convenience. Where
 this has been done, I've noted where you can find my modified STL.
+
+## Inner Frame
+
+See frame.3mf.
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2030 | 1 | Bearing plate |
+| 10154 | 1 | Name plate? |
+| 2062 | 3 | Frame columns |
+| 2060 | 1 | Carriage body |
+| 10010 | 1 | Add/subtract guide slider thingymadoo |
+| 2061 | 1 | Carriage stop pin |
+| 2052 | 1 | Tens bell bearing plate |
+| 2065 | 1 | Transmission axle guide? |
+| 2122 | 1 | Stabilizer spacer? Reset stop? |
+| 10015 | 1 | Screw securing 10010 to lower plate (Replace with M5x10) |
+| 10152 | 1 | Washer for 10015 (Not needed) |
+| VSM 12124 3 | 7 | Tens bell bearing plate & transmission guide screws (Replace with M4x6 pan head) |
+| 2074 | 6 | Nut for frame columns (Replace with M5 nut) |
 
 ## Step Drum
 
@@ -64,6 +86,8 @@ See step_drum.3mf.
 
 ## Tens Bell
 
+See tens_bell.3mf.
+
 ### Carry Resets
 
 > [!NOTE]
@@ -87,9 +111,9 @@ See step_drum.3mf.
 | 2051 | 1 | Tens bell spring mounting plate |
 | 2053 | 2 | Tens bell screws |
 
-> See tens_bell.3mf
-
 ## Zeroing & Anti-reversal
+
+See zeroing_disc.3mf.
 
 ### Zeroing Disc
 
@@ -116,29 +140,13 @@ See step_drum.3mf.
 | 10058 | 1 | Anti-reversal pawl spring (Make from 0.6mm spring wire) |
 | 2074 | 1 | Nut for anti-reversal pawl screw (Replace with M5 nut) |
 
-> See zeroing_disc.3mf
-
-## Inner Frame
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2030 | 1 | Bearing plate |
-| 10154 | 1 | Name plate? |
-| 2062 | 3 | Frame columns |
-| 2060 | 1 | Carriage body |
-| 10010 | 1 | Add/subtract guide slider thingymadoo |
-| 2061 | 1 | Carriage stop pin |
-| 2052 | 1 | Tens bell bearing plate |
-| 2065 | 1 | Transmission axle guide? |
-| 2122 | 1 | Stabilizer spacer? Reset stop? |
-| 10015 | 1 | Screw securing 10010 to lower plate (Replace with M5x10) |
-| 10152 | 1 | Washer for 10015 (Not needed) |
-| VSM 12124 3 | 7 | Tens bell bearing plate & transmission guide screws (Replace with M4x6 pan head) |
-| 2074 | 6 | Nut for frame columns (Replace with M5 nut) |
-
-> See frame.3mf
-
 ## Carry Levers
+
+See carry_levers.3mf.
+
+> [!NOTE]
+> The carry levers here need to redesigned & optimized for 3D printing. It's very clear that these
+> are designed for sheet metal manufacturing. The sliders & spring covers are probably fine.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -148,9 +156,16 @@ See step_drum.3mf.
 | 2109 | 14 | Carry lever for results |
 | 2107 | 21 | Carry spring (Make from 0.6mm spring wire) |
 
-> See carry_levers.3mf
-
 ## Transmission Axles
+
+See trans_axles.3mf.
+
+> [!NOTE]
+> These are printed 1 at a time. Each plate indicates how many times it should be printed.
+
+> [!WARNING]
+> 2063 Crown gears don't seem to have any keying for proper alignment. May need to find or model
+> an alternative.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -158,30 +173,70 @@ See step_drum.3mf.
 | 2064-2 | 1 | Transmission axle with clip slots for turn count carry input |
 | 2064-3 | 4 | Transmission axle with clip slots for result carry outputs |
 | 2064-4 | 1 | Transmission axle with clip slots for result carry input |
-| 2063 | 23 | Geared transmission axle tip |
+| 2063 | 23 | Crown gear for transmission axles |
 
 ## Transmission gears
 
-> TODO: Divide these into subassemblies
+See trans_gears.3mf
+
+> [!NOTE]
+> These are printed 1 at a time. Each plate indicates how many times it should be printed.
+
+> [!WARNING]
+> 10097 is probably too thin to be useful once printed. May need to find or design an
+> easily-printable replacement.
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 10097 | 12 | Transmission gear locating clip |
+
+### Step gear
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 10038 | 21 | Transmission step gear |
+| 10140 | 21 | Transmission gear short sleeve |
+| 10141 | 21 | Transmission gear 4.8mm spacer |
+
+### Lock gear
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2066 | 2 | Transmission gear medium sleeve for carry inputs |
+| 10141 | 2 | Transmission gear 4.8mm spacer |
+| 2073 | 2 | Transmission hold gear |
+
+### Step-lock gear
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 10055 | 21 | Transmission gear medium sleeve |
-| 10038 | 47 | Transmission step gear |
-| 2073 | 23 | Transmission hold gear |
+| 10038 | 21 | Transmission step gear |
+| 2073 | 21 | Transmission hold gear |
 | 10051 | 21 | Transmission gear 5.7mm spacer |
 | 10054 | 21 | Transmission gear 3.9mm spacer |
-| 10140 | 21 | Transmission gear short sleeve |
-| 10141 | 23 | Transmission gear 4.8mm spacer |
-| 10041 | 2 | Transmission gear 5.4mm spacer |
-| 10042 | 2 | Transmission gear 3mm spacer |
+
+### Double step gear
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 10038 | 2 | Transmission step gear |
+| 10041 | 1 | Transmission gear 5.4mm spacer |
 | 10110 | 1 | Transmission gear 4.5mm spacer |
 | 10032 | 1 | Transmission gear long sleeve for result carry input |
-| 2066 | 2 | Transmission gear medium sleeve for carry inputs |
+
+### Triple step gear
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 10038 | 3 | Transmission step gear |
+| 10042 | 2 | Transmission gear 3mm spacer |
 | 10020 | 1 | Transmission gear long sleeve for turn count carry input |
-| 10097 | 12 | Transmission gear locating clip |
+| 10041 | 1 | Transmission gear 5.4mm spacer |
 
 ## Input Assemblies
+
+See input_assemblies.3mf.
 
 ### Input Sliders
 
@@ -207,22 +262,29 @@ See step_drum.3mf.
 | 2100 | 11 | Input shaft bearing |
 | VSM 12124 3 | 6 | Input shaft bearing cover screw (Replace with M4x10 pan head) |
 
-> See input_assemblies.3mf
+## Reversal Switch
 
-## Reversal Slider
+See reversal_switch.3mf
+
+### Shaft and spacers
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
+| 2086 | 1 | Reversal slider shaft |
 | 2091 | 1 | Reversal slider lower shaft spacer |
 | 2092 | 1 | Reversal slider upper shaft spacer |
+
+### Reversal Slider
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
 | 2155 | 2 | Reversal slider assembly screws |
 | Halbrundneite 1,5 x 3 | 2 | Reversal slider rivets |
-| 2086 | 1 | Reversal slider shaft |
 | 2088 | 1 | Reversal slider |
 | 2089 | 2 | Reversal slider layer |
 | 2090 | 1 | Reversal slider layer spacer |
 | kugel 1.8 | Input slider detent ball bearing (5.4mm) |
-| 100023 | Reversal slider detent spring |
+| 100023 | Reversal slider detent spring (Make from clipped pen springs) |
 
 ## Upper Shell
 
