@@ -31,7 +31,6 @@ See frame.3mf.
 | 2061 | 1 | Carriage stop pin |
 | 2052 | 1 | Tens bell bearing plate |
 | 2065 | 1 | Transmission axle guide? |
-| 2122 | 1 | Stabilizer spacer? Reset stop? |
 | 10015 | 1 | Screw securing 10010 to lower plate (Replace with M5x10) |
 | 10152 | 1 | Washer for 10015 (Not needed) |
 | VSM 12124 3 | 7 | Tens bell bearing plate & transmission guide screws (Replace with M4x6 pan head) |
@@ -102,11 +101,11 @@ See tens_bell.3mf.
 | 2050 | 1 | Lower carry reset |
 | 2047 | 2 | Spacer |
 
-### Spring & Stabilizer
+### Spring & Mounting
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
-| 10070 | 1 | Tens bell spring |
+| 10070 | 1 | Tens bell spring (Replace with mwu's modified design) |
 | VSM 12124 | 2 | Tens bell spring screws (Replace with M4x6 pan head) |
 | 2051 | 1 | Tens bell spring mounting plate |
 | 2053 | 2 | Tens bell screws |
@@ -318,6 +317,7 @@ See reversal_switch.3mf
 | 2133 | 1 | Carriage detent pin |
 | 2132 | 1 | Carriage detent pin spring |
 | 2163 | 1 | Stabilizer? Reset doodad? |
+| 2122 | 1 | Stabilizer spacer? Reset stop? |
 
 ## Output Dials & Pins
 
