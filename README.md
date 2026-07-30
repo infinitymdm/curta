@@ -2,10 +2,12 @@
 
 This repository contains my work on 3D-printable parts for a working Curta Type II at 3:1 scale.
 
-This work would not be possible without [Marcus Wu's Curta Type I at 3x scale](https://www.thingiverse.com/thing:1943171)
-and [Mads Eskildsen's detailed Curta Type II model](https://www.thingiverse.com/thing:4146906).
+This work would not be possible without [Marcus Wu's Curta Type I at 3x scale](https://www.thingiverse.com/thing:1943171),
+[Mads Eskildsen's detailed Curta Type II model](https://www.thingiverse.com/thing:4146906), and the
+treasure trove of engineering drawings on [VCALC.net](https://www.vcalc.net/cu.htm).
 Marcus Wu's work informs many of the manufacturing and assembly techniques used here for Mads
-Eskildsen's models.
+Eskildsen's models. The engineering drawings inform a few corrections to components from
+Eskildsen's work.
 
 # Components
 
@@ -49,6 +51,10 @@ See step_drum.3mf.
 > Marcus Wu's design split the drum into two halves, but this also made the main axle (2018) a
 > primary failure point. I'd like to keep 2018 a replaceable component so that it can be machined
 > from tougher materials if need be.
+
+> [!NOTE]
+> Eskildsen's model has an error in part 10068 (main axle reversing ring) where the pin hole is
+> offset 90 degrees from where it should be. I've replaced this with a custom model.
 
 ### Main axle and base
 
@@ -105,7 +111,7 @@ See tens_bell.3mf.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
-| 10070 | 1 | Tens bell spring (Replace with mwu's modified design) |
+| 10070 | 1 | Tens bell spring (mwu's modified design) |
 | VSM 12124 | 2 | Tens bell spring screws (Replace with M4x6 pan head) |
 | 2051 | 1 | Tens bell spring mounting plate |
 | 2053 | 2 | Tens bell screws |
@@ -116,10 +122,15 @@ See zeroing_disc.3mf.
 
 ### Zeroing Disc
 
+> [!WARNING]
+> The zeroing disc (2031) has very small teeth for the anti-reversal pawl. This probably needs to
+> be modified to have larger teeth in order to be effective. Some printability optimizations are
+> also probably in order here.
+
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 2031 | 1 | Zeroing disc |
-| 2023 | 1 | Zeroing disc pin pin |
+| 2023 | 1 | Zeroing disc pin |
 | 10114 | 1 | Zeroing arm |
 | 10112 | 1 | Zeroing bearing |
 | 10118 | 1 | Zeroing disc clip |
@@ -143,7 +154,7 @@ See zeroing_disc.3mf.
 
 See carry_levers.3mf.
 
-> [!NOTE]
+> [!WARNING]
 > The carry levers here need to redesigned & optimized for 3D printing. It's very clear that these
 > are designed for sheet metal manufacturing. The sliders & spring covers are probably fine.
 
