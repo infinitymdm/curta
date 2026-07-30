@@ -21,6 +21,8 @@ this has been done, I've noted where you can find my modified STL.
 
 ## Inner Frame
 
+![3D-printed Curta Type 2 frame components](images/frame.jpg)
+
 See frame.3mf.
 
 | Part Number | Quantity | Description |
@@ -40,9 +42,11 @@ See frame.3mf.
 
 ## Step Drum
 
+![3D-printed Curta Type 2 step drum](images/step_drum.jpg)
+
 See step_drum.3mf.
 
-> [!WARNING]
+> [!NOTE]
 > There is quite a bit more optimization to be done here. For now I'm printing the step drum in
 > several parts, then assembling in a similar manner to the original design. A more optimal
 > approach would be to design a single part combining all components except 2018 into a single much
@@ -90,6 +94,8 @@ See step_drum.3mf.
 | 2010 | 4 | 5-tooth stepper |
 
 ## Tens Bell
+
+![3D-printed Curta Type II tens bell](images/tens_bell.jpg)
 
 See tens_bell.3mf.
 
@@ -150,47 +156,20 @@ See zeroing_disc.3mf.
 | 10058 | 1 | Anti-reversal pawl spring (Make from 0.6mm spring wire) |
 | 2074 | 1 | Nut for anti-reversal pawl screw (Replace with M5 nut) |
 
-## Carry Levers
-
-See carry_levers.3mf.
-
-> [!WARNING]
-> The carry levers here need to redesigned & optimized for 3D printing. It's very clear that these
-> are designed for sheet metal manufacturing. The sliders & spring covers are probably fine.
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2106 | 21 | Carry slider |
-| 2105 | 21 | Carry spring cover |
-| 2108 | 7 | Carry lever for turn count |
-| 2109 | 14 | Carry lever for results |
-| 2107 | 21 | Carry spring (Make from 0.6mm spring wire) |
-
 ## Transmission Axles
 
 See trans_axles.3mf.
 
 > [!NOTE]
-> These are printed 1 at a time. Each plate indicates how many times it should be printed.
-
-> [!WARNING]
-> 2063 Crown gears don't seem to have any keying for proper alignment. May need to find or model
-> an alternative.
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2064 | 17 | Transmission axle |
-| 2064-2 | 1 | Transmission axle with clip slots for turn count carry input |
-| 2064-3 | 4 | Transmission axle with clip slots for result carry outputs |
-| 2064-4 | 1 | Transmission axle with clip slots for result carry input |
-| 2063 | 23 | Crown gear for transmission axles |
-
-## Transmission gears
-
-See trans_gears.3mf
+> These are printed 1 at a time. Each plate's name indicates how many times it should be printed.
 
 > [!NOTE]
-> These are printed 1 at a time. Each plate indicates how many times it should be printed.
+> Axles in the provided 3mf have a 4% smaller diameter vs. the original model. This significantly
+> reduces the amount of post-processing required to fit gears and crowns.
+
+> [!WARNING]
+> 2063 Crown gears don't seem to have any keying for proper alignment (which is correct according to
+> the engineering drawings, but not super helpful). May need to find or model an alternative.
 
 > [!WARNING]
 > 10097 is probably too thin to be useful once printed. May need to find or design an
@@ -198,9 +177,21 @@ See trans_gears.3mf
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
+| 2064 | 17 | Transmission axle |
+| 2064-2 | 1 | Transmission axle with clip slots for lowest input slider digit |
+| 2064-3 | 4 | Transmission axle with clip slots for upper result carry outputs |
+| 2064-4 | 1 | Transmission axle with clip slots for lowest reversal slider digit |
+| 2063 | 23 | Crown gear for transmission axles |
 | 10097 | 12 | Transmission gear locating clip |
 
+## Transmission gears
+
+See trans_gears.3mf
+
 ### Step gear
+
+> [!NOTE]
+> Printed as 1 part. See composites/gear_step.stl
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -210,6 +201,9 @@ See trans_gears.3mf
 
 ### Lock gear
 
+> [!NOTE]
+> Printed as 1 part. See composites/gear_lock.stl
+
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 2066 | 2 | Transmission gear medium sleeve for carry inputs |
@@ -217,6 +211,9 @@ See trans_gears.3mf
 | 2073 | 2 | Transmission hold gear |
 
 ### Step-lock gear
+
+> [!NOTE]
+> Printed as 1 part. See composites/gear_step_lock.stl
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -228,6 +225,9 @@ See trans_gears.3mf
 
 ### Double step gear
 
+> [!NOTE]
+> Printed as 1 part. See composites/gear_step2.stl
+
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 10038 | 2 | Transmission step gear |
@@ -236,6 +236,9 @@ See trans_gears.3mf
 | 10032 | 1 | Transmission gear long sleeve for result carry input |
 
 ### Triple step gear
+
+> [!NOTE]
+> Printed as 1 part. See composites/gear_step3.stl
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -295,6 +298,22 @@ See reversal_switch.3mf
 | 2090 | 1 | Reversal slider layer spacer |
 | kugel 1.8 | Input slider detent ball bearing (5.4mm) |
 | 100023 | Reversal slider detent spring (Make from clipped pen springs) |
+
+## Carry Levers
+
+See carry_levers.3mf.
+
+> [!WARNING]
+> The carry levers here need to redesigned & optimized for 3D printing. It's very clear that these
+> are designed for sheet metal manufacturing. The sliders & spring covers are probably fine.
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2106 | 21 | Carry slider |
+| 2105 | 21 | Carry spring cover |
+| 2108 | 7 | Carry lever for turn count |
+| 2109 | 14 | Carry lever for results |
+| 2107 | 21 | Carry spring (Make from 0.6mm spring wire) |
 
 ## Upper Shell
 
