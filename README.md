@@ -27,18 +27,18 @@ See frame.3mf.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
-| 2030 | 1 | Bearing plate |
 | 10154 | 1 | Name plate? |
-| 2062 | 3 | Frame columns |
 | 2060 | 1 | Carriage body |
-| 10010 | 1 | Add/subtract guide slider thingymadoo |
+| 2030 | 1 | Bearing plate |
+| 2062 | 3 | Frame columns |
 | 2061 | 1 | Carriage stop pin |
 | 2052 | 1 | Tens bell bearing plate |
-| 2065 | 1 | Transmission axle guide? |
-| 10015 | 1 | Screw securing 10010 to lower plate (Replace with M5x10) |
+| 2065 | 1 | Transmission crown hold-down plate |
+| 10010 | 1 | Reversing ring guide |
+| 10015 | 1 | Screw securing reversing ring guide to bearing plate |
 | 10152 | 1 | Washer for 10015 (Not needed) |
-| VSM 12124 3 | 7 | Tens bell bearing plate & transmission guide screws (Replace with M4x6 pan head) |
-| 2074 | 6 | Nut for frame columns (Replace with M5 nut) |
+| VSM 12124 3 | 7 | Tens bell bearing plate & transmission guide screws |
+| 2074 | 6 | Nut for frame columns |
 
 ## Step Drum
 
@@ -64,7 +64,7 @@ See step_drum.3mf.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
-| 10068 | 1 | Vertical stop for switching between add/subtract modes |
+| 10068 | 1 | Reversing ring |
 | 2018 | 1 | Main axle |
 | 10069 | 1 | Pin for vertical stop |
 | 2001 | 1 | Step drum base |
@@ -164,12 +164,9 @@ See trans_axles.3mf.
 > These are printed 1 at a time. Each plate's name indicates how many times it should be printed.
 
 > [!NOTE]
-> Axles in the provided 3mf have a 4% smaller diameter vs. the original model. This significantly
-> reduces the amount of post-processing required to fit gears and crowns.
-
-> [!WARNING]
-> 2063 Crown gears don't seem to have any keying for proper alignment (which is correct according to
-> the engineering drawings, but not super helpful). May need to find or model an alternative.
+> I've made a few modifications to these models:
+> 1. Axles are printed with a 4% reduction in diameter. This saves a bit of post-processing.
+> 2. I've replaced the crown gears (2063) with a custom model which is keyed for the axles.
 
 > [!WARNING]
 > 10097 is probably too thin to be useful once printed. May need to find or design an
