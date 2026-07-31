@@ -128,11 +128,6 @@ See zeroing_disc.3mf.
 
 ### Zeroing Disc
 
-> [!WARNING]
-> The zeroing disc (2031) has very small teeth for the anti-reversal pawl. This probably needs to
-> be modified to have larger teeth in order to be effective. Some printability optimizations are
-> also probably in order here.
-
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 2031 | 1 | Zeroing disc |
@@ -155,6 +150,13 @@ See zeroing_disc.3mf.
 | 2041 | 1 | Anti-reversal pawl screw sleeve |
 | 10058 | 1 | Anti-reversal pawl spring (Make from 0.6mm spring wire) |
 | 2074 | 1 | Nut for anti-reversal pawl screw (Replace with M5 nut) |
+
+### Carrage Lock
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2163 | 1 | Carriage lock ring |
+| 2122 | 1 | Carriage lock pin |
 
 ## Transmission Axles
 
@@ -293,8 +295,8 @@ See reversal_switch.3mf
 | 2088 | 1 | Reversal slider |
 | 2089 | 2 | Reversal slider layer |
 | 2090 | 1 | Reversal slider layer spacer |
-| kugel 1.8 | Input slider detent ball bearing (5.4mm) |
-| 100023 | Reversal slider detent spring (Make from clipped pen springs) |
+| kugel 1.8 | 1 | Input slider detent ball bearing (5.4mm) |
+| 100023 | 1 | Reversal slider detent spring (Make from clipped pen springs) |
 
 ## Carry Levers
 
@@ -312,6 +314,29 @@ See carry_levers.3mf.
 | 2109 | 14 | Carry lever for results |
 | 2107 | 21 | Carry spring (Make from 0.6mm spring wire) |
 
+## Upper Carriage
+
+See upper_carriage.3mf.
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2130 | 1 | Carriage body |
+| 2146 | 1 | Carriage detent plate |
+| 2131 | 1 | Carriage detent slider |
+| 2133 | 1 | Carriage detent pin |
+| 2135 | 23 | Output dial pin |
+| 2162 | 1 | Spider spring |
+| kugel 2 | 25 | Carriage ball bearing (6mm) |
+| 2132 | 1 | Carriage detent pin spring (Make from pen spring) |
+
+## Output Dials
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2136 | 4 | Lower digit ouptut dial |
+| 2137 | 19 | Upper digit output dial |
+| 2138 | 21 | Output dial carry half-pin |
+
 ## Upper Shell
 
 | Part Number | Quantity | Description |
@@ -324,6 +349,7 @@ See carry_levers.3mf.
 
 ### Carriage Exterior Support
 
+> [!NOTE]
 > Printed as 1 part. See composites/carriage_exterior_support.stl
 
 | Part Number | Quantity | Description |
@@ -331,29 +357,6 @@ See carry_levers.3mf.
 | 2143 | 1 | Carriage support castellation |
 | 2144 | 1 | Carriage stop |
 | 2145 | 1 | Upper exterior bevel |
-
-## Upper Carriage Assembly
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2162 | 1 | Spider spring |
-| kugel 2 | 25 | Carriage ball bearing (6mm) |
-| 2130 | 1 | Carriage body |
-| 2146 | 1 | Carriage detent plate |
-| 2131 | 1 | Carriage detent slider |
-| 2133 | 1 | Carriage detent pin |
-| 2132 | 1 | Carriage detent pin spring |
-| 2163 | 1 | Stabilizer? Reset doodad? |
-| 2122 | 1 | Stabilizer spacer? Reset stop? |
-
-## Output Dials & Pins
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2135 | 23 | Output dial carriage pin |
-| 2136 | 4 | Lower digit ouptut dial |
-| 2137 | 19 | Upper digit output dial |
-| 2138 | 21 | Output dial carry half-pin |
 
 ## Clearing Cap
 
