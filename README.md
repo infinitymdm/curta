@@ -99,7 +99,7 @@ See step_drum.3mf.
 
 See tens_bell.3mf.
 
-### Carry Resets
+### Tens Bell Body
 
 > [!NOTE]
 > Printed as 1 part. See composites/carry_resets.stl
@@ -117,8 +117,8 @@ See tens_bell.3mf.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
-| 10070 | 1 | Tens bell spring (mwu's modified design) |
-| VSM 12124 | 2 | Tens bell spring screws (Replace with M4x6 pan head) |
+| 10070 | 1 | Tens bell spring (Replace with [mwu's tens_bell_spring.stl](https://www.thingiverse.com/thing:1943171))|
+| VSM 12124 | 2 | Tens bell spring screws |
 | 2051 | 1 | Tens bell spring mounting plate |
 | 2053 | 2 | Tens bell screws |
 
@@ -127,6 +127,10 @@ See tens_bell.3mf.
 See zeroing_disc.3mf.
 
 ### Zeroing Disc
+
+> [!NOTE]
+> The anti-reversal teeth on the zeroing disc (2031) are very small. This might need to be modified
+> so the anti-reversal pawl has a little more space between teeth to catch onto.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -139,7 +143,7 @@ See zeroing_disc.3mf.
 | 2035 | 1 | Zeroing arm screw |
 | 2034 | 1 | Zeroing arm screw sleeve |
 | 2038 | 1 | Zeroing arm spring (Make from 1.1mm spring wire) |
-| 2074 | 1 | Nut for zeroing arm screw (Replace with M5 nut) |
+| 2074 | 1 | Nut for zeroing arm screw |
 
 ### Anti-reversal Pawl
 
@@ -149,9 +153,9 @@ See zeroing_disc.3mf.
 | 2042 | 1 | Anti-reversal pawl screw |
 | 2041 | 1 | Anti-reversal pawl screw sleeve |
 | 10058 | 1 | Anti-reversal pawl spring (Make from 0.6mm spring wire) |
-| 2074 | 1 | Nut for anti-reversal pawl screw (Replace with M5 nut) |
+| 2074 | 1 | Nut for anti-reversal pawl screw |
 
-### Carrage Lock
+### Carriage Lock
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -261,14 +265,14 @@ See input_assemblies.3mf.
 | 10057 | 11 | Input slider |
 | kugel 1.8 | 11 | Input slider detent ball bearing (5.4mm) |
 | 10073 | 11 | Input slider detent spring (Make from clipped pen springs) |
-| 10146 | 11 | Input slider spring backing (probably not needed) |
+| 10146 | 11 | Input slider spring backing (not used) |
 
 ### Input Shafts
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
-| 10061 | 11 | Input shaft (DON'T USE! Use modified from mwu) |
-| 10029 | 11 | Input dial (DON'T USE! Use modified from mwu) |
+| 10061 | 11 | Input shaft (Replace with [mwu's selector_shaft_bootom_x8.stl](https://www.thingiverse.com/thing:1943171)) |
+| 10029 | 11 | Input dial (Replace with [mwu's selector_shaft_top.stl](https://www.thingiverse.com/thing:1943171)) |
 | 2102 | 1 | Input shaft upper digit bearing cover |
 | 2101 | 2 | Input shaft lower digit bearing cover |
 | 2100 | 11 | Input shaft bearing |
@@ -288,6 +292,10 @@ See reversal_switch.3mf
 
 ### Reversal Slider
 
+> [!NOTE]
+> To save a bit of sanding, I increased the height of 2090 by a few layers. This might come back to
+> bite me, but I think it's probably fine.
+
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 2155 | 2 | Reversal slider assembly screws |
@@ -304,7 +312,7 @@ See carry_levers.3mf.
 
 > [!WARNING]
 > The carry levers here need to redesigned & optimized for 3D printing. It's very clear that these
-> are designed for sheet metal manufacturing. The sliders & spring covers are probably fine.
+> are designed for sheet metal manufacturing. I need to make a custom model for this.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -318,18 +326,32 @@ See carry_levers.3mf.
 
 See upper_carriage.3mf.
 
+> [!NOTE]
+> Mads Eskildsen's model for 2130 has a slightly too large outer diameter which doesn't leave
+> enough space for the teeth on the bottom of the clearing cap. I've replaced this with a corrected
+> custom model.
+
+> [!WARNING]
+> I still need to make a custom model that combines 2162 and 2146 into one part, with denser arms
+> on the spider spring.
+
 | Part Number | Quantity | Description |
 | --- | --- | --- |
 | 2130 | 1 | Carriage body |
-| 2146 | 1 | Carriage detent plate |
 | 2131 | 1 | Carriage detent slider |
 | 2133 | 1 | Carriage detent pin |
 | 2135 | 23 | Output dial pin |
+| 2146 | 1 | Carriage detent plate |
 | 2162 | 1 | Spider spring |
 | kugel 2 | 25 | Carriage ball bearing (6mm) |
 | 2132 | 1 | Carriage detent pin spring (Make from pen spring) |
 
 ## Output Dials
+
+> [!WARNING]
+> These need to be custom-modeled with embossed numbers, like the Type 1 dials
+> [dwildstar did on Thingiverse](https://www.thingiverse.com/thing:3178684). Might as well
+> integrate the half-pins while I'm at it.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -358,7 +380,11 @@ See upper_carriage.3mf.
 | 2144 | 1 | Carriage stop |
 | 2145 | 1 | Upper exterior bevel |
 
-## Clearing Cap
+## Main Crank & Clearing cap
+
+See main_crank.3mf
+
+### Clearing Cap
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -366,24 +392,12 @@ See upper_carriage.3mf.
 | 2153 | 1 | Clearing ring main post |
 | 2158 | 1 | Clearing ring secondary post |
 | 2150 | 1 | Clearing cap |
-| 10142-1 | 1 | Inner clearing teeth |
-| 2152 | 1 | Clearing teeth spacer |
-| 10142-2 | 1 | Outer clearing teeth |
-| 10033 | 1 | Funny anti-reversal doodad? |
+| 10142-1 | 1 | Inner clearing teeth (Replace with [mwu's clearing_cap_teeth_x2.stl](https://www.thingiverse.com/thing:1943171)) |
+| 2152 | 1 | Clearing teeth spacer (Replace with [mwu's clearing_cap_tooth_segment_spacer.stl](https://www.thingiverse.com/thing:1943171)) |
+| 10142-2 | 1 | Outer clearing teeth (Replace with [mwu's clearing_cap_teeth_x2.stl](https://www.thingiverse.com/thing:1943171)) |
+| 10033 | 1 | Funny anti-reversal doodad? (May not be needed) |
 
-## Carriage Cap
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2168 | 1 | Carriage cap c-clip |
-| 2166 | 1 | Carriage upper spring spacer |
-| 2165 | 1 | Carriage spring |
-| 2160 | 1 | Carriage cap |
-| 2161 | 1 | Carriage lower spring spacer |
-| 2167 | 1 | Carriage cap washer |
-| 2164 | 1 | Carriage cap nut |
-
-## Main Crank
+### Crank
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -392,7 +406,25 @@ See upper_carriage.3mf.
 | 10109 | 1 | Main crank handle screw |
 | 12770 12 | 1 | Main crank pin |
 
-## Lower Shell
+### Crank collar
+
+> [!WARNING]
+> The collar (2160) and nut (2164) need a matching set of threads. that likely means I need to make
+> custom parts for these.
+
+| Part Number | Quantity | Description |
+| --- | --- | --- |
+| 2168 | 1 | Carriage c-clip |
+| 2166 | 1 | Carriage upper spring spacer |
+| 2165 | 1 | Carriage spring |
+| 2160 | 1 | Crank collar |
+| 2161 | 1 | Carriage lower spring spacer |
+| 2167 | 1 | Crank collar washer (May not be needed) |
+| 2164 | 1 | Cranc collar nut |
+
+## Lower Housing
+
+See lower_housing.3mf
 
 > Printed as 1 part. See lower_shell.stl
 
@@ -403,8 +435,13 @@ See upper_carriage.3mf.
 
 ## Bottom Cover
 
+> [!NOTE]
+> For some reason Mads Eskildsen's models don't include a bottom cover (2120). I modeled this based
+> on the engineering drawings.
+
 | Part Number | Quantity | Description |
 | --- | --- | --- |
+| 2120 | 1 | Bottom cover |
 | 12142 | 2 | Bottom cover screw |
 
 ## Decimal Markers
