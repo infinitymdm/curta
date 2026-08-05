@@ -426,21 +426,16 @@ See main_crank.3mf
 
 See lower_housing.3mf
 
-> Printed as 1 part. See lower_shell.stl
-
-| Part Number | Quantity | Description |
-| --- | --- | --- |
-| 2119 | 1 | Main body shell |
-| 2115 | 1 | Lower knurling |
-
-## Bottom Cover
-
 > [!NOTE]
+> Optionally printed as 1 part. See lower_shell.stl.
+>
 > For some reason Mads Eskildsen's models don't include a bottom cover (2120). I modeled this based
 > on the engineering drawings.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
+| 2119 | 1 | Main body shell |
+| 2115 | 1 | Lower knurling |
 | 2120 | 1 | Bottom cover |
 | 12142 | 2 | Bottom cover screw |
 
