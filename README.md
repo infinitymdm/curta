@@ -330,10 +330,8 @@ See upper_carriage.3mf.
 > Mads Eskildsen's model for 2130 has a slightly too large outer diameter which doesn't leave
 > enough space for the teeth on the bottom of the clearing cap. I've replaced this with a corrected
 > custom model.
-
-> [!WARNING]
-> I still need to make a custom model that combines 2162 and 2146 into one part, with denser arms
-> on the spider spring.
+>
+> I also combined 2146 and 2162 into a single part for ease of printing.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
@@ -348,10 +346,9 @@ See upper_carriage.3mf.
 
 ## Output Dials
 
-> [!WARNING]
-> These need to be custom-modeled with embossed numbers, like the Type 1 dials
-> [dwildstar did on Thingiverse](https://www.thingiverse.com/thing:3178684). Might as well
-> integrate the half-pins while I'm at it.
+> [!NOTE]
+> I modeled custom dials with embossed numbers, like the dials [dwildstar did on Thingiverse](https://www.thingiverse.com/thing:3178684)
+> The half-pins still have to be printed separately and assembled though.
 
 | Part Number | Quantity | Description |
 | --- | --- | --- |
